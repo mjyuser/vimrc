@@ -10,6 +10,7 @@ Plug 'Yggdroot/LeaderF', {'do': './install.py'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'ervandew/supertab'
 Plug 'vim-scripts/indentpython'
+Plug 'rizzatti/dash.vim'
 call plug#end()
 
 
@@ -150,3 +151,15 @@ au BufNewFile,BufRead *.py
 
 " 标示不必要的空白字符
 " au BufNewFile,BufRead *.py,*.pyw match BadWhiteSpace /\s\+$/
+"
+
+
+" 设置代码折叠
+" manual 
+" indent
+" expr
+" syntax
+" diff
+" marker
+set foldmethod=indent
+
